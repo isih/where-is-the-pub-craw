@@ -5,7 +5,7 @@
     $Email = $_POST["Email"];
     $Message = $_POST["Message"];
 
-    //Making Connection
+    //Inserting User data to SQL Database
         $sql = "INSERT INTO contact(Name, Email, Message)
         VALUES('$Name', '$Email', '$Message')";
         mysqli_query($conn, $sql);
