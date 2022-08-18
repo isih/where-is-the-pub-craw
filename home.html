@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="icon" href="pub-trans.png">
+    <script type="text/javascript" src="home.js"></script>
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>    
+                <nav role="navigation">
+                  <div id="menuToggle">
+                    <input type="checkbox" id="check" />
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <a href="home.html" id="log"><img src="pub-trans.png" alt="image" height="80px" width="90px"></a>
+                  <ul id="menu">
+                    <li><a href="home.html" >Home</a></li>
+                    <li><a href="#about-t" >About</a></li>
+                    <li><a href="#city-head" >Cities</a></li>
+                    <li><a href="home.html">FAQ</a></li>
+                    <li><a href="https://south.tours/magazine/" target="_blank">Blog</a></li>
+                    <li><a href="#contact-h" >Contact</a></li>
+                  </ul>
+                 </div>
+                 <a href="home.html" id="log-desk"><img src="pub-trans.png" alt="image" height="80px" width="90px"></a>
+                </nav>
+    </header>
+    <main>
+        <div id="outer-div-text" width="100%" height="800px">
+            <div id="video-div"><video src="cover-video.mp4" muted autoplay loop width="100%" id="vid"></div>
+            <div id="inner-div-text">
+                <h1>Real Time Pub Crawl Location</h1>
+                <p id="box1-para">Find where the Pub Crawl is going in real time. You will be able to join the party even if you are late!</br>
+                </p>
+                <button id="availability" onclick="cityHead()">Check Availability</button>
+            </div>
+        </div>
+    </main>
+    <div id ="des-div-P" width="100%" height="500px">
+        <image src="pub-trans.png" width="150px" height="150px" id="des-log"/>
+        <div id="inner-des-div" width="100%" height="400px">
+            <h2>Description</h2><br/>
+            <div id="des-text">
+                Welcome to "Where is The Pub Crawl". This site will help you find the realtime location of your Pub Crawl, You 
+                just need to navigate down the webpage and in the "Cities" section cllick on your city to find your pub crawl and 
+                you will be able join the Pub Crawl even if you were late and were not able to meet at the starting point. Moreover 
+                if you haven't booked your Pub Crawl yet then you can book it easily By clicking on "Book" section.
+            </div>
+        </div>
+    </div>
+    <div id="city-head"><p>Cities</p></div>
+    <div class="cover">
+        <image src="arrowl.png" id="left" onclick="scrollleft()">
+        <div class="cities-divv">
+            <div class="child"><image class="child-image" src="malaga.webp" alt="Image" height="300px" width="400px"><div id="text-m" width="200px" height="200px">Malaga</div></div>
+            <div class="child"><image class="child-image" src="granada.jpg" alt="Image" height="300px" width="400px"><div id="text-m" width="200px" height="200px">Granada</div></div>
+            <div class="child"><image class="child-image" src="madrid.webp" alt="Image" height="300px" width="400px"><div id="text-m" width="200px" height="200px">Madrid</div></div>
+            <div class="child"><image class="child-image" src="valencia.jpeg" alt="Image" height="300px" width="400px"><div id="text-m" width="200px" height="200px">Valencia</div></div>
+            <div class="child"><image class="child-image" src="barcelona.jpg" alt="Image" height="300px" width="400px"><div id="text-m" width="200px" height="200px">Barcelona</div></div>
+        </div>
+        <image src="arrowR.png" id="right" onclick="scrollRight()">
+    </div>
+    <div id="book-t">You Can Use This To</div>
+    <div id="FJB">
+        <p><a href="home.html" id="find">Find</a></p>
+        <p><a href="home.html" id="join">Join</a></p>
+        <p><a href="https://fareharbor.com/embeds/book/southtours/items/148437/calendar/2022/08/?flow=no" target="_blank" id="book">Book</a></p>
+    </div>
+    <div id="about-p">
+        <div id="about-t">About Us</div><br/>
+        <div id="about-b">South Tours is a booking service where every traveler can enrich his or her trip by discovering and taking part unique experiences anywhere in Spain. Our team is formed of field experts who are passionate and keen to show the glorious beauty and distinctive culture of Spain.<br/><br/> Every experience is hand picked after a careful process carried out by our professionals to ensure that only the most relevant and worthwhile ones are included. <br/> Our website is backed up by high technology together with a dedicated team that strives to keep the process bug-free and deliver the best service for our customers right from the first click.
+
+        </div>
+    </div>
+    <form action="info.php" method="post">
+        <div id="contact-h">Contact Us!</div>
+        <input type="text" id="Name" name="Name" placeholder="Enter Your Name">
+        <input type="email" id="Email" name="Email" placeholder="Enter Your Email">
+        <textarea type="text" id="contact-p" name="Message" placeholder="Enter Your Message here..."></textarea>
+        <button type="submit" name="submit" id="submit-btn">Submit</button>
+    </form>
+    <footer>
+        <div id="foot-p" width="100%" height="150px">
+        </div>
+    </footer>
+</body>
+</html>
