@@ -97,11 +97,12 @@
         transform: translate3d(0,0,0);
         margin-top: 30em;
         padding-bottom: 80px;
+        display: flex;
     }
     #inner-des-div{
         display: block;
         justify-content: center;
-        margin-left: 18%;
+        margin-left: 1%;
         margin-right: 15%;
         padding-top: 5px;
     }
@@ -265,8 +266,20 @@
         background-color: white;
     }
     #des-log{
-        position: absolute;
-        margin-left: 35px;
+        margin-left: 140px;
+    }
+    #des-btn{
+        margin-top: 1.5em;
+        width: 150px;
+        height: 40px;
+        background-color: #ef8028;
+        color: black;
+        font-size: large;
+    }
+    #des-btn:hover{
+        background-color: black;
+        color: #ef8028;
+        border: 1px solid white;
     }
 
 }
@@ -653,6 +666,25 @@
       {
         transform: none;
       }
+      #des-log{
+        display: none;
+        height: 0;
+        width: 0;
+      }
+
+      #des-btn{
+        margin-top: 1.5em;
+        width: 150px;
+        height: 40px;
+        background-color: #ef8028;
+        color: black;
+        font-size: large;
+    }
+    #des-btn:hover{
+        background-color: black;
+        color: #ef8028;
+        border: 1px solid white;
+    }
 
 }
 
