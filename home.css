@@ -711,12 +711,11 @@
     #menu li a{
         text-decoration: none;
         color: white;
-        margin-right: 9em;
+        padding-right: 1em;
     }
     #menu{
         list-style: none;
         display: flex;
-        margin-left: 3em;
     }
     #menu li a:hover{
         color: #ef8028;
@@ -789,6 +788,7 @@
         transform: translate3d(0,0,0);
         margin-top: 30em;
         padding-bottom: 80px;
+        display: flex;
     }
     #inner-des-div{
         display: block;
@@ -954,6 +954,20 @@
 
     #foot-p{
         background-color: white;
+    }
+
+    #des-btn{
+        margin-top: 1.5em;
+        width: 150px;
+        height: 40px;
+        background-color: #ef8028;
+        color: black;
+        font-size: large;
+    }
+    #des-btn:hover{
+        background-color: black;
+        color: #ef8028;
+        border: 1px solid white;
     }
 }
 
@@ -979,7 +993,7 @@
     #menu li a{
         text-decoration: none;
         color: white;
-        margin-right: 9em;
+        margin-right: 3em;
     }
     #menu{
         list-style: none;
@@ -1057,6 +1071,7 @@
         transform: translate3d(0,0,0);
         margin-top: 30em;
         padding-bottom: 80px;
+        display: flex;
     }
     #inner-des-div{
         display: block;
@@ -1222,5 +1237,18 @@
 
     #foot-p{
         background-color: white;
+    }
+    #des-btn{
+        margin-top: 1.5em;
+        width: 150px;
+        height: 40px;
+        background-color: #ef8028;
+        color: black;
+        font-size: large;
+    }
+    #des-btn:hover{
+        background-color: black;
+        color: #ef8028;
+        border: 1px solid white;
     }
 }
