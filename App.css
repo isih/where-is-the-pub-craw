@@ -1,0 +1,444 @@
+:root {
+	/*Personalized colors*/
+	/*
+		If you need to use one of these colors in the HTML you need
+		to use the name in the comment.
+		If you need to use it in this CSS file, you have to use
+		it this way (for example):
+		ion-modal {
+			--ion-background-color: var(--ion-color-main-bg);
+			background-color: var(--ion-color-main-bg);
+			color: var(--ion-color-white);
+		}
+	*/
+	
+
+	/*main-bg*/
+	--ion-color-main-bg: #f48024;
+	--ion-color-main-bg-rgb: 244, 128, 36;
+	--ion-color-main-bg-contrast: #000000;
+	--ion-color-main-bg-contrast-rgb: 0, 0, 0;
+	--ion-color-main-bg-shade: #d77120;
+	--ion-color-main-bg-tint: #f58d3a;
+	--ion-color-main-bg-red: red;
+	--ion-color-main-bg-edit: rgb(240, 181, 20);
+
+	/*custom font*/
+	--ion-font-family: 'Montserrat';
+
+	/*white*/
+	--ion-color-white: #ffffff;
+	--ion-color-white-rgb: 255, 255, 255;
+	--ion-color-white-contrast: #000000;
+	--ion-color-white-contrast-rgb: 0, 0, 0;
+	--ion-color-white-shade: #e0e0e0;
+	--ion-color-white-tint: #ffffff;
+}
+
+.ion-color-main-bg {
+	--ion-color-base: var(--ion-color-main-bg);
+	--ion-color-base-rgb: var(--ion-color-main-bg-rgb);
+	--ion-color-contrast: var(--ion-color-main-bg-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-main-bg-contrast-rgb);
+	--ion-color-shade: var(--ion-color-main-bg-shade);
+	--ion-color-tint: var(--ion-color-main-bg-tint);
+}
+
+.ion-color-white {
+	--ion-color-base: var(--ion-color-white);
+	--ion-color-base-rgb: var(--ion-color-white-rgb);
+	--ion-color-contrast: var(--ion-color-white-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-white-contrast-rgb);
+	--ion-color-shade: var(--ion-color-white-shade);
+	--ion-color-tint: var(--ion-color-white-tint);
+}
+
+ion-select {
+	--placeholder-opacity: 100%;
+	justify-content: center;
+	/*width: 100%;*/
+	--placeholder-color: var(--ion-color-dark);
+}
+
+/* Set the icon color and opacity */
+ion-select::part(icon) {
+	color: var(--ion-color-main-bg);
+	opacity: 1;
+}
+
+/* Set the flex in order to size the text width to its content */
+ion-select::part(placeholder),
+ion-select::part(text) {
+	flex: 0 0 auto;
+}
+
+/*Set footer color (remove to keep same color as toolbar)*/
+ion-footer {
+	background-color: var(--ion-color-main-bg);
+	color: var(--ion-color-white);
+}
+
+/*Center ion-title in ion-toolbar*/
+ion-title {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+/*Set background color and text color for modal*/
+ion-modal {
+	--ion-background-color: var(--ion-color-main-bg);
+	color: var(--ion-color-white);
+}
+
+#info-content {
+	--padding-top: 10px;
+	--padding-bottom: 10px;
+	/*
+	--padding-top: 5px;
+	--padding-bottom: 5px;
+	--padding-end: 5px;
+	--padding-start: 5px;
+	*/
+}
+
+#title {
+	font-weight: bold;
+}
+
+/*set mobile footer color*/
+.mobile-footer-container {
+	background-color: var(--ion-color-main-bg);
+}
+
+/*Logo dimensions*/
+#main-logo {
+	height: 60%;
+	width: 60%;
+}
+
+/* Leaflet: configure the size of the map */
+#map {
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+/*font settings for pub names in the footer*/
+.footer-central-row {
+	font-weight: bold;
+	font-size: large;
+}
+
+#footer-minutes {
+	font-weight: bold;
+	font-size: xx-large;
+}
+
+
+@media (max-width: 510px) {
+	#desktop-footer {
+		display: none;
+	}
+
+	.bigScreen {
+		display: none;
+	}
+}
+
+
+/*Tablet-computer view*/
+@media (min-width: 510px) {
+	.mobile-footer {
+		display: none;
+	}
+
+	.menuBtn-smallScreen {
+		display: none;
+	}
+}
+
+
+
+.mobile-footer-secondary-text {
+	font-size: small;
+}
+
+.muted {
+	opacity: 60%;
+}
+
+.mobile-footer-bold-text {
+	font-weight: bold;
+	font-size: large;
+}
+
+.mobile-footer::part(handle) {
+	/* background: var(--ion-color-white); */
+	background:black;
+}
+
+
+/*Leaflet*/
+.marker-cluster-small {
+	background-color: var(--ion-color-main-bg-shade);
+}
+
+.marker-cluster-small div {
+	background-color: var(--ion-color-main-bg);
+	color: #fff;
+	font-weight: bold;
+}
+
+/*___________________________________*/
+/*---------Admin Panel Login---------*/
+
+.sign-in-button {
+	text-decoration: none;
+	width: 75px;
+	color: var(--ion-color-white);
+}
+
+.delete-button {
+	text-decoration: none;
+	width: 75px;
+	color: var(--ion-color-white);
+	background-color: var(--ion-color-main-bg-red);
+	border-radius: 10px;
+}
+
+.edit-button {
+	background-color: var(--ion-color-main-bg-edit);
+	text-decoration: none;
+	width: 75px;
+	color: var(--ion-color-white);
+	border-radius: 10px;
+}
+
+#cancel-login-button {
+	text-decoration: none;
+	color: var(--ion-color-main-bg);
+}
+
+.login-wrapper {
+	display: grid;
+	height: 100%;
+	width: 100%;
+	align-items: center;
+	justify-items: center;
+}
+
+.login-logo {
+	text-align: center;
+}
+
+.input-wrapper {
+	text-align: center;
+}
+
+.login-form-element {
+	--highlight-color-focused: var(--ion-color-main-bg);
+}
+
+.login-label {
+	color: var(--ion-color-dark) !important;
+}
+
+.card-container {
+	box-shadow: none;
+}
+
+ion-button {
+	text-transform: none;
+	--border-radius: 8px;
+	--padding-start: 30px;
+	--padding-end: 30px;
+}
+
+#grid-login {
+	width: 100%;
+	height: 100%;
+	display: table;
+	text-align: center;
+}
+
+#grid-login>ion-row {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+.is-invalid {
+	display: none;
+}
+
+/*___________________________________*/
+/*---------Not crawling Page---------*/
+
+#show-bg {
+	background-image:
+		linear-gradient(to bottom, rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.891)),
+		url('imgs/not-crawling.png');
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	color: var(--ion-color-white);
+
+	display: flex;
+	margin: auto;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+#not-crawling-text-container {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#not-crawling {
+	object-fit: contain;
+}
+
+.not-crawling-text {
+	font-weight: bold;
+}
+
+
+.not-crawling-highlight {
+	color: var(--ion-color-main-bg);
+	text-decoration: none;
+}
+
+a.not-crawling-highlight:hover {
+	color: var(--ion-color-main-bg-shade);
+	text-decoration: none;
+	transition: .25s ease;
+	font-weight: 900;
+}
+
+/* uncomment for underline animation*/
+/*
+a.not-crawling-highlight {
+	display: inline-block;
+	position: relative;
+	color: var(--ion-color-main-bg);
+}
+
+a.not-crawling-highlight:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: var(--ion-color-main-bg);
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+}
+  
+a.not-crawling-highlight:hover:after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+
+}
+*/
+/*___________________________________*/
+/*-------------Dashboard-------------*/
+/*
+#selected-planner {
+	display: none;
+}
+*/
+
+#grid-dashboard {
+	width: 100%;
+	/* height: 100%; */
+	display: table;
+	text-align: center;
+}
+
+/*
+#grid-dashboard > ion-row{
+	display: table-cell;
+    vertical-align: middle;
+}
+*/
+#selected-agents {
+	display: none;
+}
+
+#manage-account {
+	display: none;
+}
+
+.dashboard-bold-text {
+	font-weight: bold;
+}
+
+/*Set background color and text color for modal*/
+#add-agent-modal {
+	--ion-background-color: var(--ion-color-white);
+	color: var(--ion-color-white);
+}
+
+#change-password-modal {
+	--ion-background-color: var(--ion-color-white);
+	color: var(--ion-color-white);
+}
+
+
+#add-agent-buttons {
+	position: fixed;
+	bottom: 0;
+	background-color: var(--ion-color-white);
+}
+
+.alert-class {
+	text-align: center;
+}
+
+#suggestions {
+	display: none;
+}
+
+#alert-confirm-pubcrawl-plan {
+	text-align: center;
+}
+
+#coords-stop-1,
+#coords-stop-2,
+#coords-stop-3,
+#coords-stop-4 {
+	display: none;
+}
+
+.repeat-pubcrwal {
+	font-size: 15px;
+}
+
+
+
+/* ------------Validate.php-------------*/
+
+.confirmationError {
+	background-color: var(--ion-color-main-bg);
+	color: white;
+}
+
+.confirmationSuccess {
+	/*background-color: var(--ion-color-main-bg);*/
+	color: var(--ion-color-main-bg);
+}
+
+
+/* ------------manageCrawling.php-------------*/
+
+#manage-agent-account {
+	display: none;
+}
+
